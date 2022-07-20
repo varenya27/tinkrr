@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "639913670245",
+    "project_id": "tinkrr-2a9fb",
+    "storage_bucket": "tinkrr-2a9fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639913670245:android:1207a7ce00287db5bf788c",
+        "android_client_info": {
+          "package_name": "com.example.tinkrr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639913670245-71v0ab3brlrqiv3f31agun4fng81qquc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tinkrr",
+            "certificate_hash": "4e6ba1eac168aea4b12c3b3eb063fc129d18c884"
+          }
+        },
+        {
+          "client_id": "639913670245-v9tqo1s4en6h70t0157hd0g3upbtk8d4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tinkrr",
+            "certificate_hash": "e39e0971059b180a1ffae43961b13176ac7f1750"
+          }
+        },
+        {
+          "client_id": "639913670245-tu0a0ptdfgl0tj88ffmj6e4cc65a7cct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAetZULikxNleCzZwZ9Bl3uEvb-7d41IFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639913670245-tu0a0ptdfgl0tj88ffmj6e4cc65a7cct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
