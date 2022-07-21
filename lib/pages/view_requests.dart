@@ -133,7 +133,7 @@ class ViewRequests extends StatelessWidget {
             builder:
                 (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
               if (!snapshot.hasData) {
-                print('empty');
+                // print('empty');
                 return Padding(
                     padding: const EdgeInsets.fromLTRB(10, 30, 10, 0),
                     child: Container(
@@ -279,6 +279,7 @@ void showUpdateDialog(
               ElevatedButton(
                 style: ElevatedButton.styleFrom(primary: Colors.red),
                 onPressed: () {
+                  DB_request(uid: uid).deleteItems();
                   Navigator.pop(context);
                 },
                 child: const Text("Reject"),
@@ -321,6 +322,7 @@ void showCloseDialog(
               ElevatedButton(
                 style: ElevatedButton.styleFrom(primary: Colors.red),
                 onPressed: () {
+                  DB_request(uid: uid).deleteItems();
                   Navigator.pop(context);
                 },
                 child: const Text("Close"),
