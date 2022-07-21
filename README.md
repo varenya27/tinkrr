@@ -4,9 +4,9 @@ An Inventory App
 
 ## Setting up
 
-Follow [this tutorial](https://docs.flutter.dev/get-started/install) to get started with flutter.
-Run `flutter doctor` to make sure everything is installed properly and then `flutter run` to run the app.
-Make sure you're using either an android emulator or a phone to enter debug mode.
+- Follow [this tutorial](https://docs.flutter.dev/get-started/install) to get started with flutter.
+- Run `flutter doctor` to make sure everything is installed properly and then `flutter run` to run the app.
+- Make sure you're using either an android emulator or a phone to enter debug mode (and not Chrome/Edge).
 
 ## Code rundown
 - The main code is in [lib/main.dart](https://github.com/varenya27/tinkrr/blob/main/lib/main.dart) as in any flutter app.<br />
