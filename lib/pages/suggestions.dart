@@ -23,14 +23,15 @@ class Suggestions extends StatelessWidget {
             .where('roll', isEqualTo: user!.email!.split('@')[0])
             .snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
-          if (!snapshot.hasData) return Center(child: Text('No Suggestions'));
+          if (!snapshot.hasData)
+            return Center(child: CircularProgressIndicator());
 
           return ListView(
             shrinkWrap: true,
             padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
             children: snapshot.data!.docs.map((DocumentSnapshot document) {
               dev = document['device_name'];
-              roll = document['roll'];
+              roll = user!.email!.split('@')[0];
               return Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(
@@ -90,7 +91,8 @@ void showSuggestDialog(BuildContext context, String roll) {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(),
                 onPressed: () {
-                  DB_suggest().addSuggestion(myController1.text, roll);
+                  DB_suggest().addSuggestion(
+                      myController1.text, user.email!.split('@')[0]);
                   Navigator.pop(context);
                 },
                 child: const Text("Add"),
